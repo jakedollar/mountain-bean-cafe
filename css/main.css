@@ -93,6 +93,18 @@ footer {
     padding: 0;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.gallery img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -104,10 +116,16 @@ footer {
     .pricing-table {
         grid-template-columns: 1fr;
     }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 360px) {
     main {
         padding: 1em;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }
