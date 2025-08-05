@@ -71,6 +71,28 @@ footer {
     width: 100%;
 }
 
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    text-align: center;
+}
+
+.plan {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.plan h3 {
+    margin-top: 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -78,6 +100,9 @@ footer {
     }
     nav li {
         margin: 0.5em 0;
+    }
+    .pricing-table {
+        grid-template-columns: 1fr;
     }
 }
 
